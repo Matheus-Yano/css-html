@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contabil Mais</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/imagens/logo-favicon.jpg" type="image/x-icon">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <img src="/imagens/logo-contabil-mais.jpg" alt="Logo Contabil Mais">
+        </div>
+        <nav>
+            <ul>
+                <!-- Links do Menu de Navegação -->
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Home -->
+    <section id="home" class="hero-section">
+        <h1>Bem-vindo à Contabil Mais</h1>
+        <p>Atendimento ágil e humanizado para ajudar sua empresa a crescer com segurança fiscal.</p>
+        <a href="#contato" class="cta-button">Fale Conosco</a>
+    </section>
+
+    <!-- Seção Sobre Nós -->
+    <section id="sobre" class="about-section">
+        <h2>Quem Somos</h2>
+        <p>Fundada em 2020, a Contabil Mais oferece serviços contábeis com excelência, ajudando empresários a otimizar resultados e garantir conformidade fiscal.</p>
+    </section>
+
+    <!-- Seção Serviços -->
+    <section id="servicos" class="services-section">
+        <h2>Nossos Serviços</h2>
+        <!-- Cartões de Serviço -->
+        <div class="service">
+            <h3>Gestão Tributária</h3>
+            <p>Especialistas em enquadramento tributário para maximizar seus resultados.</p>
+        </div>
+        <div class="service">
+            <h3>Departamento Fiscal</h3>
+            <p>Apuração de impostos com agilidade e precisão.</p>
+        </div>
+        <div class="service">
+            <h3>Consultoria Contábil</h3>
+            <p>Suporte contábil especializado para o crescimento sustentável da sua empresa.</p>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="contact-section">
+        <h2>Entre em Contato</h2>
+        <form action="submit_form.php" method="POST" onsubmit="return validateForm()">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+            
+            <button type="submit" class="cta-button">Enviar Mensagem</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>© 2024 Contabil Mais. Todos os direitos reservados.</p>
+        <ul class="social-links">
+            <li><a href="https://www.instagram.com/contabilmaisgestao/">Instagram</a></li>
+            <li><a href="facebook.com/contabilmaisgestao">Facebook</a></li>
+        </ul>
+    </footer>
+
+     <!-- Linkando o arquivo JavaScript -->
+     <script src="main.js"></script>
+
+</body>
+</html>
